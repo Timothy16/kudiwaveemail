@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Onest:wght@100..900&family=Work+Sans&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        body {
+            font-family: 'Clash Display', sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+        .bg-color{
+            /* background-color: rgba(0,0,0,0.2); */
+            background-color: #f2f2f2;
+            /* height: 100vh; */
+            padding: 4rem 0;
+        }
+        .template-inside{
+            margin: auto;
+            width: 50%; 
+            background: #0E0F0F;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .img-fluid-1{
+            width: 100%;
+        }
+        .template-text{
+            /* padding: 50px 50px; */
+            margin-top: 1rem;
+        }
+        .welcome-note{
+            font-weight: 400;
+            font-size: 1rem;
+            /* color: #333; */
+            color: #000;
+            padding-top: 2rem;
+        }
+        .welcome-note-c{
+            font-weight: 800;
+            font-size: 1.5rem;
+            /* color: #333; */
+            color: #282828;
+            padding-top: 1rem;
+        }
+        .template-text p{
+            font-size: .8rem;
+            color: #fff;
+            padding: 1rem 0;
+            font-weight: 400;
+            line-height: 15.62px;
+        }
+        .text-section-d{
+            margin-top: 1rem;
+            padding: 0 50px 50px 50px;
+        }
+        .action-button{
+            text-align: center;
+            margin-top: 1rem;
+        }
+        .email-button{
+            background-color: #56F26A;
+            color: #0E0F0F;
+            border: none;
+            padding: 18px 34px;
+            cursor: pointer;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 10px;
+        }
+        .btn-d{
+            margin-top: 1rem;
+        }
+        .app-section{
+            background-image: url("line-footer-bg.png");
+            background-repeat: no-repeat;
+            background-position: top;
+            background-color: #0E0F0F;
+            background-size: cover;
+            padding: 20px 50px 45px 50px;
+            height: auto;
+            /* display: flex;
+            flex-wrap: wrap; */
+        }
+        .inner-text-i {
+            flex: 1;
+        }
+    
+        .title{
+            font-weight: 600;
+            font-size: 1.5rem;
+            color: #FFFFFF;
+            margin-top: 1rem;
+        }   
+        .app-d{
+            margin-top: 1rem;
+        }
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+        .social-media-d{
+            display: flex;
+            /* justify-content: center; */
+            margin: 1rem 0;
+            gap: 30px;
+        }
+        .footer-text{
+            color: #00182A;
+            font-size: 10px;
+            /* margin-top: 1.5rem; */
+            padding: 1rem 0 0 0;
+
+        }
+        .p-footer{
+            color: #FFFFFF;
+            font-size: 8px;
+            font-weight: 400;
+            margin-top: .5rem;
+        }
+        .help-desk{
+          width: 50%;
+        }
+        .help-desk-1{
+           position: relative;
+           top: -50px;
+            float: right;
+        }
+        .help-desk-11{
+          display: none;
+        }
+       
+        .download-button{
+            display: flex;
+            gap: 10px;
+            margin-top: .5rem;
+        }
+        .btn-download{
+            padding: 8px 34px;
+            border-radius: 25px;
+            border: 1px solid  #56F26A;
+            background:  #56F26A;
+            color: #0E0F0F;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 19.2px;
+        }
+        .i-t{
+            position: relative;
+            top: 3px;
+            width: 15px;
+        }
+        @media only screen and (max-width: 578px) {
+            .bg-color{
+                height: auto;
+                padding: 10px;
+            }
+            .template-inside{
+                margin: auto;
+                width: 100% !important; 
+            }
+            .template-text{
+                padding: 50px 0;
+                margin-top: 1rem;
+            }
+            .app-section{
+                padding: 20px 20px 0 20px;
+                display: block;
+            }
+            .text-section-d{
+                margin-top: 1rem;
+                padding: 0 20px;
+            }
+            .title{
+                font-weight: 700;
+                font-size: 14px;
+                /* color: #fff; */
+                width: 100%;
+            }  
+            
+            .img-p{
+                width: 80px !important;
+                height: auto;
+            }
+            .help-desk{
+                width: 100%;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .help-desk-1{
+                display: none;
+            }
+            .help-desk-11{
+                display: block;
+            }
+            .download-button{
+                justify-content: center;
+            }
+            .social-media-d{
+                justify-content: center;
+            }
+        }
+        @media only screen and (max-width: 768px) {
+            .bg-color{
+                /* height: auto; */
+                padding: 10px;
+            }
+            .template-inside{
+                margin: auto;
+                width: 100%; 
+            }
+           
+            .img-p{
+                width: 100px;
+                height: auto;
+            }
+            .app-section{
+                    /* background-color: #023088;
+                    padding: 20px 20px 40px 20px; */
+                display: block;
+                
+            }
+            .app-section {
+                padding: 20px 50px 20px 50px;
+            }
+        }
+        @media only screen and (min-width: 1024px) and (max-width: 1249px) {
+            .template-inside{
+                margin: auto;
+                width: 80%; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-color">
+        <div class="template-inside">
+            <div class="template-text">
+                <div class="img-logo">
+                    <img srcset="" class="img-fluid-1" alt="" src="banner.png">
+                </div>
+
+                <div class="text-section-d">
+                    <div class="welcome-note">Hello Chief</div>
+
+                   <p>Enim leo feugiat ut tincidunt risus vel ut dignissim arcu. Vel vitae euismod fringilla vel. Mattis mattis risus bibendum tellus. Sed quis pulvinar id vel aliquet sit ut cursus. Non nullam lacus justo aliquet gravida enim eget a. Fringilla quam varius suscipit egestas dictumst mi lacus donec. Velit lacus tristique arcu porta. Ut euismod laoreet ac pharetra quis maecenas urna sollicitudin tortor. Pellentesque tincidunt netus faucibus odio adipiscing integer amet est.</p>
+                    
+                   <p>Ut facilisi at quisque vitae posuere turpis. Neque in molestie magna elementum mi id molestie tincidunt. A odio eget neque condimentum molestie. Accumsan tincidunt nisl mi condimentum proin purus rhoncus sed. Phasellus nullam in odio erat eget at imperdiet nulla varius.</p>
+                    
+                   <p> Ut sit vulputate feugiat ipsum semper vestibulum morbi accumsan id. Malesuada vel maecenas suscipit commodo metus lacus id magnis eget.</p>
+                    
+                    <p>Facilisi urna quis non et pretium facilisi luctus sit sociis. Mi urna diam elit arcu lorem quis. Ut aliquam tellus sit non ultricies adipiscing a pretium. Nibh mauris donec vulputate eget mi nullam. Molestie tortor ultrices vel turpis amet. Faucibus auctor dignissim amet sit et. Eget leo enim ullamcorper phasellus tempor scelerisque lacus tincidunt nibh. Quam venenatis quis nibh ut consequat neque felis eu adipiscing. Tristique phasellus nisl eu ut eu adipiscing eu.</p>
+                    
+                    <div class="btn-d">
+                        <span class="email-button">
+                            Whatever CTA
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+            <footer class="app-section">
+                <div class="help-desk-1">
+                    <img src="phone-footer.png" class="img-fluid" alt="" srcset="" />
+                </div>  
+                <div class="help-desk">
+                    
+                    
+                    <h2 class="title">Surf the Money Wave with Kudiwave, download the app</h2>
+                    <p class="p-footer">Download the Kudiwave app today and experience a new wave of financial freedom.</p>
+                    <div class="download-button">
+                        <a target="_blank" href="">
+                        <div class="btn-download">
+                                <span>Andriod  <img class="i-t" src="logo-a.png" alt="" srcset="" /></span> 
+                        </div>
+                        </a>
+                        <a target="_blank" href="">
+                            <div class="btn-download">
+                                <span>iOS  <img class="i-t" src="logo-i.png" alt="" srcset="" /></span> 
+                            </div>
+                        </a>
+                    </div>
+                    <div class="social-media-d">
+                        <div>
+                            <a href="" target="_blank">
+                                <img src="instagram.png" class="img-fluid " alt="" srcset="" />
+                            </a>
+                            <a href="" target="_blank">
+                                <img src="twitter.png" class="img-fluid " alt="" srcset="" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="help-desk-11">
+                        <img src="phone-footer.png" class="img-fluid" alt="" srcset="" />
+                    </div> 
+                </div>
+                              
+               
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
